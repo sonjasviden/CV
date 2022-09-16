@@ -5,7 +5,7 @@ text-align: center;
 
 h1 {
     display: block;
-    font-size: ;
+    font-size: 35px;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
     margin-left: 0;
@@ -15,9 +15,9 @@ h1 {
     text-align: center;
   }
 
-  ul {
+ul {
     text-align: center;
-}
+  }   
 
 a {
     color: hotpink;
@@ -28,4 +28,42 @@ a {
   a:hover {
     color: rgb(107, 100, 103);
   }
+
+  .button {
+    background-color: #59473d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .email {
+    background-color: #59473d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
   
+  .call {
+    background-color: #59473d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
