@@ -1,0 +1,31 @@
+body {
+background-color: #ffffff;
+text-align: center;
+}
+
+h1 {
+    display: block;
+    font-size: ;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color:rgb(71, 65, 55);
+    text-align: center;
+  }
+
+  ul {
+    text-align: center;
+}
+
+a {
+    color: hotpink;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration:none;
+  }
+
+  a:hover {
+    color: rgb(107, 100, 103);
+  }
+  
