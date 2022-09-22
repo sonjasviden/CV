@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,35 +10,80 @@
 </head>
 <body>
     
-    <ul>
-        <li><a href="">Om mig</a></li>
-        <li><a href="">Kontakt</a></li>
-        <li><a href="">Portfolio</a></li>
-    </ul>
+  <ul>
+    <li><a class="active" href="#home">home</a></li>
+    <li><a href="#news">news</a></li>
+    <li><a href="#contact">contact</a></li>
+    <li><a href="#about">about</a></li>
+  </ul><br>
 
-<h1>Sonja Svidén - CV</h1>
+<h1>Welcome</h1>
+<h2>Sonja Svidén</h2>
+<h3>Front-End Developer</h3>
 
-<ul>
-<a href="https://google.com" class="button">Facebook</a>
-<a href="https://google.com" class="button">LinkedIn</a>
-</ul>
+<h2 id="h-body">About</h2>
 
-<img src="IMG_8574.jpg" width="300" height="300" alt="På Sonja">
+<div class='container'>
+<img src="IMG_8574.jpg" alt="På Sonja">
+<p id="p-about">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+  when an unknown printer took a galley of type and scrambled it to make a type 
+  specimen book. It has survived not only five centuries, but also the leap into 
+  electronic typesetting, remaining essentially unchanged. It was popularised in the 
+  1960s with the release of Letraset sheets containing Lorem Ipsum passages, and 
+  more recently with desktop publishing software like Aldus PageMaker including 
+  versions of Lorem Ipsum.</p>
+</div>
 
-<ul>
-<a href="mailto:sonja.sviden@live.com" class="email">Maila mig</a>
-<a href="tel:0763904074" class="call">Ring mig</a>
-</ul>
+<h2 id="h-body">Contact</h2>
 
-<p>Ⓒ Sonja Svidén<br> paragraph with a line break.</p>
+    <form>
+      <label for="name" id="formheading">Name:</label><br>
+      <input type="text" id="input" name="name" placeholder="Your name..." required><br>
+
+      <label for="email" id="formheading">Email:</label><br>
+      <input type="email" id="input" name="email" placeholder="Your email..." required><br>
+
+      <label for="number" id="formheading">Phone Number:</label><br>
+      <input type="number" id="input" name="number" placeholder="Your phone number..."><br>
+
+      <label for="bio" id="formheading">Message:</label><br>
+      <textarea name="bio" id="input" cols="30" rows="10" placeholder="Your message..." required></textarea>
+      
+
+      <p>Select your age:</p>
+
+      <input type="radio" name="age" value="0-25" id="option-1">
+      <label for="option-1">0-25</label>
+
+      <input type="radio" name="age" value="26-50" id="option-2">
+      <label for="option-2">26-50</label>
+
+      <input type="radio" name="age" value="51+" id="option-3">
+      <label for="option-3">51+</label>
+
+      <br><br>
+
+<label for="">Security questions:</label>
+<select name="questions" id="questions">
+  <option value="q1">What's your favorite color?</option>
+  <option value="q2">What food is your favorite?</option>
+</select>
+
+<br><br>
+
+<label for="">Security question answer:</label>
+<input type="text" id="answer" name="answer">
+
+<br><br>
+
+<input type="submit" value="Send">
+
+    </form>
+
+  </div>
+
+<p>Ⓒ Sonja Svidén</p>
 
 </body>
 </html>
-
-<table>
-<tr>
-    <td>HEJ</td>
-    <td>ALLA</td>
-    <td>NI</td>
-</tr>
-</table>
