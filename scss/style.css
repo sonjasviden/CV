@@ -1,0 +1,528 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&family=Poppins:wght@200&display=swap");
+body {
+  background-image: url(/backg.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgba(1, 6, 1, 0.5);
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6em;
+  z-index: 3;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
+  display: flex;
+  align-items: center;
+  left: 0;
+  justify-content: space-around;
+}
+.navbar img {
+  height: 200px;
+  display: flex;
+}
+.navbar a {
+  color: #f8f4e5;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.navbar a:hover {
+  border-bottom: 2px solid #aa5f5f;
+  transition: 250ms ease-in-out;
+  color: #aa5f5f;
+}
+.navbar ul {
+  width: 300px;
+  list-style: none;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 100px;
+  justify-content: center;
+}
+.container-header img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.head-text {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-right: 30px;
+}
+.head-text h2 {
+  color: #f8f4e5;
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 40px;
+  margin: 0;
+  padding: 10px;
+}
+.head-text h3 {
+  color: #f8f4e5;
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0;
+}
+
+.flip-card {
+  width: 300px;
+  margin-bottom: 210px;
+  padding: 10px;
+}
+.flip-card img {
+  height: 200px;
+  border-radius: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.social-links {
+  align-items: flex-end;
+}
+.social-links img {
+  height: 40px;
+  padding: 10px;
+}
+.social-links img:hover {
+  border-bottom: 2px solid #aa5f5f;
+  transition: 250ms ease-in-out;
+}
+
+.experiences {
+  background-color: #f8f4e5;
+  margin-bottom: 20px;
+  /* Skills centrerad p-text */
+  /* "Education" columnen centrerad */
+  /* "Medieinstitutet" och "Hermods" rubrik */
+}
+.experiences h3 {
+  font-family: "Nunito Sans", sans-serif;
+  color: rgb(90, 89, 89);
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.experiences h4 {
+  font-family: "Nunito Sans", sans-serif;
+  color: rgb(90, 89, 89);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.experiences p {
+  font-family: "Poppins", sans-serif;
+  color: rgb(90, 89, 89);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.experiences .column2 p {
+  text-align: center;
+}
+.experiences .column4 p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.experiences .column4 h3 {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 0%;
+}
+.experiences .columns {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.7rem;
+}
+.experiences .columns > div {
+  flex: 50%;
+}
+
+.vl1 {
+  border-left: 4px solid #aa5f5f;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.portfolio {
+  padding: 20px;
+  background-color: #f8f4e5;
+  width: 70%;
+  margin: auto;
+}
+.portfolio h3 {
+  font-family: "Nunito Sans", sans-serif;
+  color: rgb(90, 89, 89);
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.portfolio .columns1-box {
+  width: 33.33%;
+}
+.portfolio .columns1 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.portfolio .columns1 p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  width: 100%;
+  color: rgb(90, 89, 89);
+}
+.portfolio .columns1 a {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  width: 100%;
+  color: rgb(90, 89, 89);
+  text-decoration: none;
+}
+.portfolio .columns1 a:hover {
+  border-bottom: 2px solid #aa5f5f;
+  transition: 250ms ease-in-out;
+}
+.portfolio h4 {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(90, 89, 89);
+  font-family: "Nunito Sans", sans-serif;
+  margin: auto;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.portfolio h5 {
+  font-family: "Nunito Sans", sans-serif;
+  color: rgb(90, 89, 89);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.media img {
+  width: 50%;
+  margin: 0;
+}
+
+.phone {
+  width: 300px;
+  margin-right: auto;
+  margin-bottom: 10%;
+  margin-left: auto;
+  padding: 30px 12px;
+  border-radius: 48px;
+  background-color: #fff;
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.contact-us {
+  background: #f8f4e5;
+  padding: 50px 100px;
+  border-top: 10px solid #aa5f5f;
+  width: 40%;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* stjärna för obligatoriska fält */
+}
+.contact-us h3 {
+  font-family: "Nunito Sans", sans-serif;
+  color: rgb(90, 89, 89);
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.contact-us label, .contact-us input, .contact-us textarea {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 24pt;
+  font-family: "Nunito Sans", sans-serif;
+}
+.contact-us label {
+  color: rgb(90, 89, 89);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.contact-us input {
+  margin-bottom: 24pt;
+}
+.contact-us em {
+  color: #aa5f5f;
+  font-weight: bold;
+}
+.contact-us input, .contact-us textarea {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: #f8f4e5;
+  padding-left: 5px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+.contact-us input:focus, .contact-us textarea:focus {
+  border-bottom: 2px solid #aa5f5f;
+  transition: 250ms ease-in-out;
+}
+.contact-us textarea {
+  resize: none;
+}
+.contact-us button {
+  display: block;
+  float: right;
+  line-height: 24pt;
+  padding: 0 20px;
+  border: none;
+  background: #aa5f5f;
+  color: #f8f4e5;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
+}
+.contact-us button:hover {
+  background: inherit;
+  border-bottom: 2px solid #aa5f5f;
+  transition: 250ms ease-in-out;
+  color: #aa5f5f;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  border: 2px solid #aa5f5f;
+  -webkit-text-fill-color: rgb(90, 89, 89);
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  -webkit-transition: 5000s ease-in-out 0s;
+  transition: 5000s ease-in-out 0s;
+}
+
+input::-moz-placeholder {
+  font-size: 14px;
+  text-transform: none;
+}
+
+input:-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: none;
+}
+
+input::placeholder {
+  font-size: 14px;
+  text-transform: none;
+}
+
+.footer {
+  background-color: #f8f4e5;
+}
+.footer h4 {
+  font-family: "Nunito Sans", sans-serif;
+  color: rgb(90, 89, 89);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.footer a {
+  color: #aa5f5f;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+.footer a:hover {
+  border-bottom: 2px solid #aa5f5f;
+  transition: 250ms ease-in-out;
+  color: #aa5f5f;
+}
+.footer .social-links {
+  padding: 0px;
+}
+.footer .social-links img {
+  height: 45px;
+}
+.footer .social-links a:hover {
+  border-bottom: none;
+}
+
+.footer-banner {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.7rem;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+  }
+  .navbar a {
+    font-size: 10px;
+    padding: 1px;
+  }
+  .container-header img {
+    height: 200px;
+  }
+  .container-header h2 {
+    font-size: 25px;
+    width: 250px;
+  }
+  .container-header h3 {
+    font-size: 15px;
+  }
+  .container-header .head-text {
+    padding-right: 0;
+    width: 200px;
+  }
+  .container-header .flip-card {
+    display: none;
+  }
+  .container-header .social-links {
+    align-items: flex-end;
+  }
+  .container-header .social-links img {
+    height: 40px;
+    padding: 10px;
+  }
+  .experiences p {
+    width: 100%;
+    padding: 0;
+  }
+  .experiences .vl1 {
+    display: none;
+  }
+  .experiences .columns {
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+    flex-direction: column;
+  }
+  .portfolio h4 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .portfolio .columns1-box h5 {
+    margin: 15px;
+  }
+  .portfolio .media {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .portfolio .media img {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .portfolio .phone {
+    width: 60%;
+    margin-right: auto;
+    margin-bottom: 10%;
+    margin-left: auto;
+    padding: 30px 12px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+  .portfolio video {
+    width: 100%;
+    height: auto;
+  }
+  .portfolio .columns1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio .columns1-box {
+    width: 100%;
+  }
+  .contact-us h3 {
+    margin: 0;
+    padding: 0px;
+    padding-bottom: 40px;
+    width: 160px;
+  }
+  .footer-banner {
+    padding: 40px;
+    justify-content: flex-end;
+  }
+}
