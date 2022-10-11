@@ -10,6 +10,7 @@ body {
   padding: 0;
   -o-object-fit: fill;
      object-fit: fill;
+  z-index: 0;
 }
 
 header {
@@ -18,7 +19,6 @@ header {
 }
 
 .navbar {
-  overflow: hidden;
   background-color: rgba(1, 6, 1, 0.5);
   font-family: "Nunito Sans", sans-serif;
   color: white;
@@ -56,6 +56,55 @@ header {
 .navbar ul {
   width: 300px;
   list-style: none;
+}
+
+.dropbtn {
+  background-color: #f8f4e5;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: url(/backg.jpg);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: transparent;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn:hover {
+  background: transparent;
+  background-position: top;
+  color: #aa5f5f;
 }
 
 .container-header {
@@ -155,6 +204,7 @@ header {
   padding: 30px;
   font-size: 30px;
   margin-bottom: 0;
+  padding-top: 4em;
 }
 .experiences h4 {
   font-family: "Nunito Sans", sans-serif;
@@ -214,6 +264,7 @@ header {
   padding: 30px;
   font-size: 30px;
   margin-bottom: 0;
+  padding-top: 3em;
 }
 .portfolio .columns1-box {
   width: 33.33%;
@@ -271,6 +322,7 @@ header {
 
 .phone {
   width: 300px;
+  height: 100%;
   margin-right: auto;
   margin-bottom: 10%;
   margin-left: auto;
@@ -283,7 +335,6 @@ header {
 video {
   width: 100%;
   height: auto;
-  border-radius: 20px;
 }
 
 .contact-us {
@@ -305,6 +356,7 @@ video {
   font-size: 30px;
   margin-bottom: 0;
   margin-top: 0;
+  padding-top: 2.5em;
 }
 .contact-us label, .contact-us input, .contact-us textarea {
   display: block;
@@ -370,7 +422,6 @@ textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus {
   border: 2px solid #aa5f5f;
   -webkit-text-fill-color: rgb(90, 89, 89);
-  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
   -webkit-transition: 5000s ease-in-out 0s;
   transition: 5000s ease-in-out 0s;
 }
@@ -427,8 +478,12 @@ input::placeholder {
   display: flex;
   flex-wrap: wrap;
   line-height: 1.7rem;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-evenly;
+}
+
+.top-image img {
+  width: 80px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -438,6 +493,9 @@ input::placeholder {
   .navbar a {
     font-size: 10px;
     padding: 1px;
+  }
+  .dropdown-content a {
+    padding: 10px;
   }
   .container-header img {
     height: 200px;
@@ -517,12 +575,21 @@ input::placeholder {
   }
   .contact-us h3 {
     margin: 0;
-    padding: 0px;
+    padding-top: 2em;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 40px;
     width: 160px;
+  }
+  form {
+    width: 250px;
+    margin: auto;
+    display: block;
+    margin-left: -55px;
   }
   .footer-banner {
     padding: 40px;
     justify-content: flex-end;
+    display: block;
   }
 }

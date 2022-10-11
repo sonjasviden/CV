@@ -17,19 +17,30 @@
   <header>
     <div class="navbar" id="myTopnav">
       <div class="sonja">
-        <img src="/logo.png" alt="...">
+        <img src="logo.png" alt="...">
        </div>
 
-      <div class="nav-list">
-        <a href="#home">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">MENU</button>
+        <div class="dropdown-content">
+        <a href="#">Home</a>
         <a href="#experiences">Experiences</a>
         <a href="#contact">Contact</a>
+        <a href="#portfolio">Portfolio</a>
+        </div>
       </div>
 
-      </div>
+      <!-- <div class="nav-list">
+        <a href="#">Home</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#contact">Contact</a>
+        <a href="#portfolio">Portfolio</a>
+      </div> -->
+
+    </div>
   </header>
 
-  <div class="main">
+  <div class="main" id="main">
 
     <div class="container-header">
       <img src="img.png" alt="På Sonja">
@@ -41,25 +52,25 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/font.png" alt="">
+              <img src="font.png" alt="">
             </div>
 
             <div class="flip-card-back">
-            <img src="/back.png" alt="">
+            <img src="back.png" alt="">
             </div>
           </div>
         </div>
 
         <div class="social-links">
-          <a href="https://github.com/sonjasviden"><img src="/github-beige.png"></a>
-            <a href="mailto:sonja.sviden@medieinstitutet.se"><img src="/email-beige.png"></a>
-            <a href="https://www.linkedin.com/in/sonja-svid%C3%A9n-162649174/"><img src="/linkedin.png"></a>
+          <a href="https://github.com/sonjasviden"><img src="github-beige.png"></a>
+            <a href="mailto:sonja.sviden@medieinstitutet.se"><img src="email-beige.png"></a>
+            <a href="https://www.linkedin.com/in/sonja-svid%C3%A9n-162649174/"><img src="linkedin.png"></a>
         </div>
 
       </div>
     </div>
 
-    <div class="experiences">
+    <div class="experiences" id="experiences">
       <h3>Experiences</h3>
 
       <div class="columns">
@@ -107,7 +118,7 @@
       </div>
     </div>
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
       <h3>Portfolio</h3>
 
       <div class="clayspace">
@@ -133,12 +144,12 @@
         </div>
 
         <div class="media">
-          <img src="/cs.png" alt="">
+          <img src="cs.png" alt="">
           <div class="videos">
             <div data-w-id="e45b02e6-f041-bcac-0f18-6d98bcafe9b3" class="phone" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
               <div class="video-mobile w-embed">
                 <video autoplay="" loop="" playsinline="" muted="">
-              <source src="/clayspace_video_mobile.mp4" type="video/mp4">
+              <source src="clayspace_video_mobile.mp4" type="video/mp4">
             </video></div></div></div>
         </div>
       </div>
@@ -168,12 +179,12 @@
         </div>
 
         <div class="media">
-          <img src="/bs.png" alt="">
+          <img src="bs.png" alt="">
           <div class="videos">
             <div data-w-id="e45b02e6-f041-bcac-0f18-6d98bcafe9b3" class="phone" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
               <div class="video-mobile w-embed">
                 <video autoplay="" loop="" playsinline="" muted="">
-              <source src="/bs_video.mov" type="video/mp4">
+              <source src="bs_video.mov" type="video/mp4">
             </video></div></div></div>
         </div>
       </div>
@@ -183,10 +194,10 @@
     </div> 
     
 
-    <div class="contact-us">
+    <div class="contact-us" id="contact">
       <h3>Contact Me</h3>
       <form action="#">
-        <label for="customerName">NAME <em>&#x2a;</em></label><input id="customerName" name="customerName" required="" type="text" placeholder="Firsname Lastname"/>
+        <label for="customerName">NAME <em>&#x2a;</em></label><input id="customerName" name="customerName" required="" type="text" placeholder="Firstname Lastname"/>
         <label for="customerEmail">EMAIL <em>&#x2a;</em></label><input id="customerEmail" name="customerEmail" required="" type="email" placeholder="example@yourcompany.com"/>
         <label for="customerPhone">PHONE</label><input id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" placeholder="ex. +46 123 234 34 45"/>
         <label for="customerNote">YOUR MESSAGE <em>&#x2a;</em></label><textarea id="customerNote" name="customerNote" required="" rows="4" placeholder="Your message here..."></textarea>
@@ -204,9 +215,9 @@
         <div class="socials">
           <h4>― Socials</h4>
           <div class="social-links">
-            <a href="https://github.com/sonjasviden"><img src="/github.png""></a>
-            <a href="mailto:sonja.sviden@medieinstitutet.se"><img src="/email.png"></a>
-            <a href="https://www.linkedin.com/in/sonja-svid%C3%A9n-162649174/"><img src="/linkedin2.png"></a>
+            <a href="https://github.com/sonjasviden"><img src="github.png""></a>
+            <a href="mailto:sonja.sviden@medieinstitutet.se"><img src="email.png"></a>
+            <a href="https://www.linkedin.com/in/sonja-svid%C3%A9n-162649174/"><img src="linkedin2.png"></a>
           </div>
         </div>
 
@@ -214,11 +225,16 @@
           <h4>― Contacts</h4>
             <a href="mailto:sonja.sviden@medieinstitutet.se">sonja.sviden@medieinstitutet.se</a><br>
             <a href="tel:0763904074">(+46) 76 390 40 74</a>
-          </div>
         </div>
 
+        <div class="top-image">
+          <a href="#top"><img src="pil_uppåt.png"></a>
+          </div>
+
       </div>
+
     </div>
+
   </footer>
 
 </body>
