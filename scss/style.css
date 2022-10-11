@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&family=Poppins:wght@200&display=swap");
 body {
-  background-image: url(/backg.jpg);
+  background-image: url(/images/backg.jpg);
   background-attachment: fixed;
   width: 100%;
   overflow-x: hidden;
