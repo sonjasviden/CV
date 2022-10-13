@@ -496,6 +496,9 @@ input::placeholder {
     font-size: 10px;
     padding: 1px;
   }
+  .dropdown-content {
+    padding-top: 0px;
+  }
   .dropdown-content a {
     padding: 10px;
   }
